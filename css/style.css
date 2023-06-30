@@ -1,0 +1,268 @@
+
+/*  =====================    Google Fonts Link  =====================    */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/*#region   =======================  Pre-Defined Values ==================== */
+
+:root{
+
+    /* =============    Colors  =============== */
+    --bg-color: rgba(31, 33, 38, 1);
+    --white-color: rgba(255, 255, 255, 1);
+    --color-1: rgba(101, 200, 208, 1);
+    --color-2: rgba(200, 155, 201, 1);
+    --color-3: rgba(121, 160, 201, 1);
+    --color-4: rgba(131, 139, 197, 1);
+    --text-color: rgba(45, 45, 45, 1);
+
+    /* =============    Gradients  =============== */
+    --card-gradient: linear-gradient(134.37deg, #65C8D0 -85.13%, #C89BC9 21.78%, #79A0C9 95.64%, #838BC5 95.64%);
+    --pyramid-gradient: linear-gradient(89.78deg, #C89BC9 0.85%, #838BC5 49.4%, #65C8D0 100.02%);
+    --rectangle-gradient: linear-gradient(99.73deg, #838BC5 0.73%, #C89BC9 50.8%, #65C8D0 98.82%);
+    --button-gradient: linear-gradient(90deg, #C89BC9 2.15%, #838BC5 49.04%, #65C8D0 100%);
+    
+    
+    /* =============    Font Sizes  =============== */
+    --mediocre-font-size: 1.5rem;
+    --medium-font-size: 2rem;
+    
+    
+    /* =============    Transitions  =============== */
+    --transition-1: all 300ms ease;
+
+
+
+}
+
+/*#endregion  */
+
+
+
+
+
+
+/*#region   =======================    General Classes    ====================== */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+img{
+    width: 100%;
+}
+
+/*#endregion  */
+
+
+
+
+
+
+/*#region   =======================    Reusable Classes    ====================== */
+
+.bg_random_images{
+    width: 15%;
+    position: absolute;
+    z-index: -99;
+    fliter: blur(1.7px);
+    -webkit-filter: blur(1.7px);
+}
+
+
+/*#endregion  */
+
+
+
+
+
+
+/*#region   =======================    Header    ====================== */
+
+header{
+    z-index: 100;
+    padding: 1rem 6rem;
+    height: 7.5rem;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo_div{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo_image{
+    width: 100%;
+}
+
+nav ul{
+    width: 60%;
+    gap: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    font-size: var(--mediocre-font-size);
+}
+
+nav ul a{
+    transition: var(--transition-1);
+}
+
+nav ul li.active{
+    font-weight: 700;
+}
+
+nav ul li.active:hover a{
+    text-shadow: none;
+}
+
+nav ul a:hover,
+nav ul a:hover p
+{
+    text-shadow: 0 0 3px var(--white-color);
+}
+
+.hire_div{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hire_div a{
+    padding: 1.1rem 2.5rem;
+    border-radius: 0.5rem;
+    background: var(--button-gradient);
+    transition: var(--transition-1);
+}
+
+.hire_div a:hover{
+    transform: scale(0.95);
+}
+
+.hire_div a p{
+    font-size: var(--mediocre-font-size);
+}
+
+/*#endregion  */
+
+
+
+
+
+
+/*#region   =======================    Hero Section    ====================== */
+
+.hero{
+    height: 120vh;
+    width: 100%;
+    padding: 13rem 0 1rem;
+    color: var(--white-color);
+    position: relative;
+}
+ 
+.hero__section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero__img{
+    width: 30%;
+}
+
+.hero__logo{
+    width: 30%;
+}
+
+.hero__start_text,
+.hero__mid_text{
+    font-size: var(--medium-font-size);
+}
+
+#hero_circle{
+    transform: scaleX(-1) rotate(60deg);
+    top: 2rem;
+    left: 35%;
+}
+
+#hero_cone{
+    transform: scaleX(-1) rotate(-45deg);
+    top: -3rem;
+    left: 29%;
+}
+
+#hero_cylinder{
+    transform: scaleX(-1) rotate(30deg);
+    bottom: 15rem;
+    left: 15%;
+}
+
+#hero_ring{
+    transform: rotate(3deg);
+    top: 30%;
+    left: 0;
+    width: 15%;
+}
+
+#hero_round{
+    right: 12%;
+    top: 25%;
+    width: 15%;
+}
+
+#hero_spiral{
+    top: 6%;
+    right: 28%;
+}
+
+#hero_comp{
+    bottom: 16%;
+    right: 8%;
+}
+
+
+/*#endregion  */
+
+
+
+
+
+/*#region   =======================    Reusable Classes    ====================== */
+
+
+
+/*#endregion  */
