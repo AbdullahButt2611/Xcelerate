@@ -24,8 +24,12 @@
     
     
     /* =============    Font Sizes  =============== */
-    --mediocre-font-size: 1.5rem;
+    --h1-font-size: 7rem;
+    --h3-font-size: 3rem;
     --medium-font-size: 2rem;
+    --mediocre-font-size: 1.5rem;
+    --small-font-size: 1rem;
+    --smaller-font-size: 0.8rem;
     
     
     /* =============    Transitions  =============== */
@@ -84,6 +88,19 @@ img{
     z-index: -99;
     fliter: blur(1.7px);
     -webkit-filter: blur(1.7px);
+}
+
+.section_second_heading{
+    font-size: var(--h3-font-size);
+    color: var(--white-color);
+    text-align: center;
+}
+
+.section{
+    padding: 0 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -254,6 +271,232 @@ nav ul a:hover p
     right: 8%;
 }
 
+
+/*#endregion  */
+
+
+
+
+
+/*#region   =======================    Top section    ====================== */
+
+.badge_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/Backgrounds/Our\ Team\ Bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cards{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+}
+
+.cards .card{
+    width: 30%;
+    height: 20rem;
+    background-color: var(--white-color);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+.card__icon{
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+    width: 100%;
+    background: var(--rectangle-gradient);
+}
+
+.cards img{
+    width: 40%;
+    height: 100%;
+}
+
+.card__title{
+    font-size: var(--small-font-size);
+}
+
+.card__description{
+    width: 100%;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.card__link{
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#blog__img{
+    width: 33%;
+}
+
+/*#endregion  */
+
+
+
+
+
+/*#region   =======================    Expertise Section    ====================== */
+.expertise__section{
+    width: 100%;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.expertise__section .card{
+    height: 25rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper_card_wrapper{
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.expertise__section .card__title,
+.expertise__section .card__description{
+    text-align: center;
+}
+
+.card__button{
+    padding: 1rem;
+    background: var(--button-gradient);
+    width: 100%;
+    text-align: center;
+    border-radius: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#web_app_card_icon img{
+    width: 63%;
+}
+
+#cloud_card_icon img{
+    width: 53%;
+}
+
+.extra__button{
+    border-radius: 0.7rem;
+    width: 20%;
+    padding: 0.3rem;
+    background: var(--button-gradient);
+    cursor: pointer;
+}
+
+.extra__button p{
+    border-radius: inherit;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: var(--mediocre-font-size);
+}
+
+
+
+/*#endregion  */
+
+
+
+
+
+/*#region   =======================    Benefit Section    ====================== */
+
+.benefit__section{
+    padding-top: 3rem;
+    width: 100%;
+    position: relative;
+}
+
+.benefit__content{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.benefit__content h1{
+    width: 20%;
+    font-size: var(--h1-font-size);
+    color: var(--white-color);
+    line-height: 8rem;
+}
+
+.benefit__content img{
+    width: 10%;
+}
+
+.benefit__content #character__img{
+    margin-left: 6rem;
+    width: 30%;
+    transform: scaleX(-1);
+    position: relative;
+    bottom: 0;
+}
+
+.benefit__content #pyramid__img{
+    width: 40%;
+}
+
+.benefit__section .hero_cone{
+    top: 10%;
+    left: 5%;
+}
+
+.benefit__section .hero_ring{
+    bottom: 1rem;
+    left: 9rem;
+} 
+
+.benefit__section .hero_cylinder
+{
+    transform: rotate(-45deg);
+    bottom: 10%;
+    left: 34%;
+}
+
+.benefit__section .hero_spiral{
+    right: 25%;
+    top: 20%;
+}
+
+.benefit__section .hero_round{
+    right: 5%;
+    top: 25%;
+}
+
+.benefit__section .hero_comp{
+    bottom: 2rem;
+    right: 0;
+}
 
 /*#endregion  */
 
