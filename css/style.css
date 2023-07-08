@@ -1327,7 +1327,109 @@ nav ul a:hover p
 
 
 
-/*#region   =======================    About Expertise Classes    ====================== */
+/*#region   =======================    Hire Section    ====================== */
+
+.hire__section{
+    margin-top: 10rem;
+    align-items: flex-start;
+}
+
+.hire__section .hero_circle{
+    width: 15%;
+    top: 20%;
+    left: 35%;
+    z-index: 5;
+}
+
+.hire__section .hero_ring{
+    width: 15%;
+    left: 80%;
+    bottom: 15%;
+    z-index: 10;
+}
+
+.hire__section .hero_comp{
+    z-index: 10;
+    width: 15%;
+    transform: scaleX(1);
+    left: -7%;
+    top: -2%;
+}
+
+.hire__section .hero_cylinder{
+    z-index: 10;
+    width: 15%;
+    transform: rotate(-35deg);
+    bottom: 3%;
+    left: 20%;
+}
+
+.hire__section .hero_cv{
+    width: 15%;
+    z-index: 10;
+    right: -3%;
+    top: -20%;
+}
+
+.hire__container{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.hire__detail__wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.hire__detail__wrapper i,
+.hire__detail__wrapper p{
+    color: var(--white-color);
+    font-size: var(--mediocre-font-size);
+}
+
+.hire__detail__wrapper i{
+    font-size: var(--medium-font-size);
+}
+
+.hire__social__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    color: var(--white-color);
+}
+
+.hire__social__wrapper h4{
+    font-size: var(--medium-font-size);
+}
+
+.hire__socials{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: var(--medium-font-size);
+}
+
+.hire__socials i{
+    cursor: pointer;
+}
+
+/*#endregion  */
+
+
+
+
+
+/*#region   =======================     Classes    ====================== */
 
 
 /*#endregion  */
