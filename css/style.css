@@ -2009,7 +2009,137 @@ nav ul a:hover p
 
 
 
+/*#region   =======================     One Service Hero    ====================== */
+
+.one__service__hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/Backgrounds/Rectangle\ 1.png");
+    background-size: cover;
+    color: var(--white-color);
+    gap: 2rem;
+}
+
+.one__service__hero__description{
+    width: 60%;
+    font-size: var(--mediocre-font-size);
+    text-align: center;
+}
+
+.one__service__hero__btn{
+    background-color: var(--white-color);
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: var(--normal-font-size);
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    transition: all 300ms ease;
+}
+
+.one__service__hero__btn:hover{
+    background-color: whitesmoke;
+}
+
+
+/*#endregion  */
+
+
+
+
+
+/*#region   =======================     Approach Section    ====================== */
+
+.approach__section{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 6rem;
+    color: var(--white-color);
+    gap: 1rem;
+}
+
+.approach_desc{
+    font-size: var(--mediocre-font-size);
+    font-weight: 300;
+    word-spacing: 5px;
+    margin-bottom: 2rem;
+}
+
+.steps{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.step{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.timeliner{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeliner span{
+    border: 4px solid var(--white-color);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    background: var(--card-gradient);
+}
+
+.liner{
+    /* border: 2px solid red; */
+    width: 2px;
+    padding-bottom: calc(100% + 50%);
+    background-color: var(--white-color);
+}
+
+.approach__details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-left: 4px solid var(--white-color);
+    margin-left: -6.8rem;
+    z-index: -1;
+    padding-left: 4rem;
+}
+
+.approach__details p{
+    font-size: var(--mediocre-font-size);
+    word-spacing: 5px;
+    padding-bottom: 3rem;
+}
+
+/*#endregion  */
+
+
+
+
+
 /*#region   =======================     Classes    ====================== */
+
 
 
 /*#endregion  */
