@@ -788,6 +788,7 @@ nav ul a:hover p
     justify-content: center;
     align-items: center;
     width: 100%;
+    overflow: hidden;
 }
 
 .team_entity{
@@ -805,6 +806,7 @@ nav ul a:hover p
     background: url("../assets/Backgrounds/Our\ Team\ Bg.png");
     background-size: contain;
     background-repeat: no-repeat;
+    width: 102%;
 }
 
 .team__elements img{
@@ -813,19 +815,19 @@ nav ul a:hover p
 }
 
 .team__elements img:first-child{
-    margin-top: -7.8rem;
+    margin-top: -8.8rem;
   margin-left: -1.5rem;
 }
 
 
 .team__elements img:nth-child(2){
-    margin-top: -7.5rem;
+    margin-top: -8.3rem;
     width: 26%;
     margin-left: 1.5rem;
   }
   
   .team__elements img:nth-child(3){
-    margin-top: -7.5rem;
+    margin-top: -8.4rem;
     width: 34%;
     margin-left: 2.5rem;
 }
