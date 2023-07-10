@@ -812,11 +812,17 @@ nav ul a:hover p
 }
 
 .team__elements img:first-child{
-    margin-top: -8rem;
+    margin-top: -7.8rem;
+}
+
+.team__elements img:nth-child(2){
+    margin-top: -7.5rem;
+    width: 26%;
 }
 
 .team__elements img:nth-child(3){
-    margin-top: -4.5rem;
+    margin-top: -7.5rem;
+    width: 34%;
 }
 
 .team__wrapper{
