@@ -231,11 +231,11 @@
             <div class="core_img_container">
                 <img src="assets/Core Capabilities - Images/Image 5.jpg" alt="">
                 <div class="core_img_wrapper">
-                    <div class="bullet active"></div>
-                    <div class="bullet"></div>
-                    <div class="bullet"></div>
-                    <div class="bullet"></div>
-                    <div class="bullet"></div>
+                    <div id="bullet_1" class="bullet active"></div>
+                    <div id="bullet_2" class="bullet"></div>
+                    <div id="bullet_3" class="bullet"></div>
+                    <div id="bullet_4" class="bullet"></div>
+                    <div id="bullet_5" class="bullet"></div>
                 </div>
             </div>
         </div>
@@ -243,9 +243,9 @@
         <div class="right_core">
             <h3 class="section_subtitle">Core Capabilities</h3>
              
-            <h1 class="section_title">IT Support and Desk</h1>
+            <h1 id="right_core_title" class="section_title">IT Support and Desk</h1>
 
-            <p class="section__description">We provide responsive and reliable IT support services to address your technical issues promptly.</p>
+            <p id="right_core_description" class="section__description">We provide responsive and reliable IT support services to address your technical issues promptly.</p>
         </div>
 
     </section>
@@ -458,6 +458,70 @@
             slide[current].style.display = 'block';
         }
         start();
+
+        var allBullets = document.querySelectorAll(".core_img_wrapper div");
+        var bulletImg = document.querySelector(".core_img_container > img");
+        var bullettitle = document.querySelector("#right_core_title");
+        var bulletdesc = document.querySelector("#right_core_description");
+
+        
+
+        var bulletno1 = document.querySelector("#bullet_1");
+        var bulletno2 = document.querySelector("#bullet_2");
+        var bulletno3 = document.querySelector("#bullet_3");
+        var bulletno4 = document.querySelector("#bullet_4");
+        var bulletno5 = document.querySelector("#bullet_5");
+
+        bulletno1.addEventListener("click", () => {
+            allBullets.forEach(singleBullet => {
+                singleBullet.classList.remove("active");
+            })
+            bulletno1.classList.add("active");
+            bulletImg.src = "assets/Core Capabilities - Images/Image 5.jpg";
+            bullettitle.innerText = "IT Support and Helpdesk";
+            bulletdesc.innerText = "We provide responsive and reliable IT support services to address your technical issues promptly.";
+        })
+
+        bulletno2.addEventListener("click", () => {
+            allBullets.forEach(singleBullet => {
+                singleBullet.classList.remove("active");
+            })
+            bulletno2.classList.add("active");
+            bulletImg.src = "assets/Core Capabilities - Images/Image 1.jpg";
+            bullettitle.innerText = "Custom Software Development";
+            bulletdesc.innerText = "With our expertise in software development, we create tailored solutions that align perfectly with your business requirements.";
+        })
+
+        bulletno3.addEventListener("click", () => {
+            allBullets.forEach(singleBullet => {
+                singleBullet.classList.remove("active");
+            })
+            bulletno3.classList.add("active");
+            bulletImg.src = "assets/Core Capabilities - Images/Image 2.jpg";
+            bullettitle.innerText = "Cloud Solutions and Migration";
+            bulletdesc.innerText = "We specialize in cloud solutions that enable businesses to leverage the flexibility, scalability, and cost-effectiveness of cloud computing.";
+        })
+
+        bulletno4.addEventListener("click", () => {
+            allBullets.forEach(singleBullet => {
+                singleBullet.classList.remove("active");
+            })
+            bulletno4.classList.add("active");
+            bulletImg.src = "assets/Core Capabilities - Images/Image 3.jpg";
+            bullettitle.innerText = "Cybersecurity Services";
+            bulletdesc.innerText = "Safeguarding your digital assets is our top priority. Our cybersecurity services are designed to protect your business from potential threats, vulnerabilities, and data breaches.";
+        })
+
+        bulletno5.addEventListener("click", () => {
+            allBullets.forEach(singleBullet => {
+                singleBullet.classList.remove("active");
+            })
+            bulletno5.classList.add("active");
+            bulletImg.src = "assets/Core Capabilities - Images/Image 4.jpg";
+            bullettitle.innerText = "IT Consulting & Strategy Building";
+            bulletdesc.innerText = "At Xcelerate, we excel in providing strategic IT consulting services to help businesses harness the power of technology to achieve their goals.";
+        })
+
     </script>
     
     

@@ -796,6 +796,7 @@ nav ul a:hover p
     align-items: center;
     width: 100%;
     padding:  0 12rem;
+    gap: 4rem;
 }
 
 .team__elements{
@@ -813,16 +814,20 @@ nav ul a:hover p
 
 .team__elements img:first-child{
     margin-top: -7.8rem;
+  margin-left: -1.5rem;
 }
+
 
 .team__elements img:nth-child(2){
     margin-top: -7.5rem;
     width: 26%;
-}
-
-.team__elements img:nth-child(3){
+    margin-left: 1.5rem;
+  }
+  
+  .team__elements img:nth-child(3){
     margin-top: -7.5rem;
     width: 34%;
+    margin-left: 2.5rem;
 }
 
 .team__wrapper{
